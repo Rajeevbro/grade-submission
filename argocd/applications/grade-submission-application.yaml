@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Rajeevbro/grade-submission.git
     targetRevision: main
-    path: overlays/dev
+    path: helm/grade-submission-portal
     helm:
       valueFiles:
         - values.yaml
