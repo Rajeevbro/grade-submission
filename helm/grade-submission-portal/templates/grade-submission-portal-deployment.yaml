@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.microservice.name }}
   # namespace: {{ .Values.microservice.namespace }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.microservice.replicas}}
   selector:
     matchLabels:
       app.kubernetes.io/instance: {{ .Values.microservice.name }}
