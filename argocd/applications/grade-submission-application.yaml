@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rslim087a/argocd-kubernetes-gitops-tutorial.git
+    repoURL: https://github.com/Rajeevbro/grade-submission.git
     targetRevision: HEAD
-    path: helm/grade-submission
+    path: helm/grade-submission-portal
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: grade-helm-demo
+    namespace: grade-submission-application
   syncPolicy:
     automated:
       prune: true
