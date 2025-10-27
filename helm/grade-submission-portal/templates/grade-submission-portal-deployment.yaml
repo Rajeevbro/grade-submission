@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.microservice.name }}
-  namespace: {{ .Values.microservice.namespace }}
+  # namespace: {{ .Values.microservice.namespace }}
 spec:
   replicas: 1
   selector:

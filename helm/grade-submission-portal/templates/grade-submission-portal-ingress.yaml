@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ .Values.microservice.name }}-ingress
-  namespace: {{ .Values.microservice.namespace }}
+  # namespace: {{ .Values.microservice.namespace }}
 spec:
   ingressClassName: nginx
   rules:     
