@@ -1,8 +1,8 @@
 microservice: ## general service details
   name: grade-submission-portal
   namespace: grade-submission
-
   replicas: 5
+
 
 workload:  ## container specific configurations
   image: rslim087/kubernetes-course-grade-submission-portal
