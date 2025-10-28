@@ -1,7 +1,7 @@
 microservice: ## general service details
   name: grade-submission-portal
   namespace: grade-submission
-  replicas: 6
+  replicas: 3
 
 
 workload:  ## container specific configurations
