@@ -16,8 +16,8 @@ spec:
             port: 
               number: {{ .Values.workload.port }}
 
-  - http:
-      paths:
+
+     
       - pathType: Prefix
         path: "/argocd(/|$)(.*)"    
         backend:
