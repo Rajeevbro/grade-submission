@@ -5,7 +5,7 @@ microservice: ## general service details
 
 
 workload:  ## container specific configurations
-  image: rchapagain/cicdapp:dev #rslim087/kubernetes-course-grade-submission-portal
+  image: rchapagain/cicdapp:d4eaa3b
   port: 8085   #5001
   
   resources:
