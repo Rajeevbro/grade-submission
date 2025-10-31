@@ -20,13 +20,13 @@ spec:
         image:  {{ .Values.workload.image }}
         livenessProbe:
           httpGet:
-            path: /healthz
+            path: {{ .Values.healthcheck.livenessPath}}
             port: http
           initialDelaySeconds: {{ .Values.workload.livenessDelay }}
           periodSeconds: 5
         readinessProbe:
           httpGet:
-            path: /readyz
+            path: {{ .Values.healthcheck.readinessPath}}
             port: http
           periodSeconds: 5
         envFrom:

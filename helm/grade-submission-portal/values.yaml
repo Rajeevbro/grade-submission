@@ -5,7 +5,7 @@ microservice: ## general service details
 
 
 workload:  ## container specific configurations
-  image: rslim087/kubernetes-course-grade-submission-portal
+  image: rchapagain/cicdapp:dev
   port: 5001
   resources:
     memory: "128Mi"
@@ -17,3 +17,6 @@ env:   ## environment variables
 
 
 ## upgrade to include host for ingress
+healthcheck:
+  livenessPath: /actuator/health/liveness
+  readinessPath: /actuator/health/readiness
