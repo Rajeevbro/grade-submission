@@ -5,7 +5,7 @@ microservice: ## general service details
 
 
 workload:  ## container specific configurations
-  image: rchapagain/cicdapp:dev
+  image: rchapagain/cicdapp:latest
   port: 8085
   resources:
     memory: "128Mi"
