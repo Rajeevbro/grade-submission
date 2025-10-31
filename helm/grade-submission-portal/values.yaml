@@ -5,7 +5,7 @@ microservice: ## general service details
 
 
 workload:  ## container specific configurations
-  image: rchapagain/cicdapp:7c06535
+  image: rchapagain/cicdapp:a142754
   port: 8085   #5001
   
   resources:
