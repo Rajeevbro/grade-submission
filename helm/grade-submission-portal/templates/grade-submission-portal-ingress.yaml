@@ -22,7 +22,7 @@ spec:
         path: "/argocd(/|$)(.*)"    
         backend:
           service: 
-            name: argocd-port-forward
+            name: argocd-port-forward-proxy
             port: 
               number: 80
 
