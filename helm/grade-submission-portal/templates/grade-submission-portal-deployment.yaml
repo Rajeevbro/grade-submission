@@ -18,17 +18,17 @@ spec:
       containers:
       - name: {{ .Values.microservice.name }}
         image:  {{ .Values.workload.image }}
-        # livenessProbe:
-        #   httpGet:
-        #     path: {{ .Values.healthcheck.livenessPath}}
-        #     port: http
-        #   initialDelaySeconds: {{ .Values.workload.livenessDelay }}
-        #   periodSeconds: 5
-        # readinessProbe:
-        #   httpGet:
-        #     path: {{ .Values.healthcheck.readinessPath}}
-        #     port: http
-        #   periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: {{ .Values.healthcheck.livenessPath}}
+            port: http
+          initialDelaySeconds: {{ .Values.workload.livenessDelay }}
+          periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: {{ .Values.healthcheck.readinessPath}}
+            port: http
+          periodSeconds: 5
         envFrom:
           - configMapRef:
               name: {{ .Values.microservice.name }}-config
