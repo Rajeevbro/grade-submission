@@ -15,3 +15,17 @@ spec:
             name: {{ .Values.microservice.name }}
             port: 
               number: {{ .Values.workload.port }}
+
+  - http:
+      paths:
+      - pathType: Prefix
+        path: "/argocd(/|$)(.*)"    
+        backend:
+          service: 
+            name: argocd-port-forward
+            port: 
+              number: 80
+
+
+
+
