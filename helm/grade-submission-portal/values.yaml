@@ -9,8 +9,8 @@ workload:  ## container specific configurations
   port: 8085   #5001
   
   resources:
-    memory: "512Mi"
-    cpu: "20m"
+    memory: "200Mi"
+    cpu: "10m"
   livenessDelay: 15
 
 env:   ## environment variables
