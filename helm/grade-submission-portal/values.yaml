@@ -10,7 +10,7 @@ workload:  ## container specific configurations
   
   resources:
     memory: "512Mi"
-    cpu: "200m"
+    cpu: "50m"
   livenessDelay: 15
 
 env:   ## environment variables
