@@ -2,7 +2,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: grade-submission-portal-hpa
-  namespace: {{ .Values.microservice.namespace }}
+ # namespace: {{ .Values.microservice.namespace }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
