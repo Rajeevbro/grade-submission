@@ -9,7 +9,7 @@ workload:  ## container specific configurations
   port: 8085   #5001
   
   resources:
-    memory: "200Mi"
+    memory: "512Mi"
     cpu: "10m"
   livenessDelay: 15
 
