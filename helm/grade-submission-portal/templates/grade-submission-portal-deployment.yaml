@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: grade-submission
-        app.kubernetes.io/component: frontend
+        app.kubernetes.io/component: backend
         app.kubernetes.io/instance: {{ .Values.microservice.name }}
     spec:
       containers:
