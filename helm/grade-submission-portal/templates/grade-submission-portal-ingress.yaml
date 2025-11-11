@@ -13,7 +13,7 @@ spec:
         path: "/"    
         backend:
           service:
-            name: {{ .Values.microservice.name }}
+            name: {{ .Values.microservice.name }}-service
             port: 
               number: {{ .Values.workload.port }}
 
