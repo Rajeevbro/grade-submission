@@ -1,11 +1,13 @@
 microservice: ## general service details
   name: grade-submission-portal
   namespace: grade-submission
-  replicas: 1
+  replicas: 3
 
 
 workload:  ## container specific configurations
-  image: rchapagain/cicdapp:88e0b6a
+
+  image: rchapagain/cicdapp:50ec0af
+
   port: 8085   #5001
   
   resources:
