@@ -1,6 +1,6 @@
 microservice: ## general service details
   name: grade-submission-portal
-  namespace: grade-submission
+  namespace: monitoring
   replicas: 1
 
 

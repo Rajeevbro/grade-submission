@@ -2,7 +2,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: {{ .Values.microservice.name }}
-  namespace: monitoring
+  namespace: {{ .Values.microservice.namespace }}
   labels:
     release: prometheus # matches kube-prometheus-stack release label
 spec:
